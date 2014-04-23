@@ -1,0 +1,11 @@
+h1 Update User
+form(method="POST" action="/users/#{user.name}")
+	p Name:
+		input#name(type="text" name="name" value="#{user.name}")
+	p Email:
+		input#email(type="email" name="email" value="#{user.email}")
+	p Age:
+		input#age(type="number" name="age" value="#{user.age}")
+	p: button(type="submit") Edit
+br
+a(href="/users") Back Users
